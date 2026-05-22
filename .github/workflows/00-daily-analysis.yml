@@ -277,6 +277,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.TELEGRAM_MESSAGE_THREAD_ID }}
+          MARKDOWN_TO_IMAGE_CHANNELS: ${{ secrets.MARKDOWN_TO_IMAGE_CHANNELS }}
+          MARKDOWN_TO_IMAGE_MAX_CHARS: ${{ secrets.MARKDOWN_TO_IMAGE_MAX_CHARS }}
+          MD2IMG_ENGINE: ${{ secrets.MD2IMG_ENGINE }}
           
           # 方式四：邮件
           EMAIL_SENDER: ${{ vars.EMAIL_SENDER || secrets.EMAIL_SENDER }}
