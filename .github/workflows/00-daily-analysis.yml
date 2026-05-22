@@ -40,6 +40,16 @@ jobs:
       
       - name: 检出代码
         uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdown-to-file
+        run: |
+          npm install -g markdown-to-file
+          which m2f
       
       - name: 设置 Python 环境
         uses: actions/setup-python@v6
